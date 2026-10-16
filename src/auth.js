@@ -1,12 +1,12 @@
 /**
  * Authentication Module
  * Admin Email: seree999@gmail.com
- * Google OAuth Client ID: 350873779023-qvs87c1cbog2qbses9bfv6agofasfmn1.apps.googleusercontent.com
+ * Google OAuth Client ID: 414030598909-8bdcbtcetlb7i9thbie7bj6bbmnhekjr.apps.googleusercontent.com
  */
 
 const AUTH_KEY = 'flood_sos_auth_session';
 export const ADMIN_EMAIL = 'seree999@gmail.com';
-export const GOOGLE_CLIENT_ID = '350873779023-qvs87c1cbog2qbses9bfv6agofasfmn1.apps.googleusercontent.com';
+export const GOOGLE_CLIENT_ID = import.meta.env?.VITE_GOOGLE_CLIENT_ID || '414030598909-8bdcbtcetlb7i9thbie7bj6bbmnhekjr.apps.googleusercontent.com';
 
 /**
  * ฟังก์ชันถอดรหัส JWT Token ที่ Google ส่งกลับมา
