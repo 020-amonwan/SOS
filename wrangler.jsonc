@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "flood-rescue-app",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-29",
+  "assets": {
+    "directory": "./dist"
+  }
+}

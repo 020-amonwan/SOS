@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.water-btn.active {
+  @apply border-blue-500 bg-blue-950/60 ring-2 ring-blue-500/50;
+}
+
+.water-btn[data-water="ROOF"].active {
+  @apply border-red-500 bg-red-950/80 ring-2 ring-red-500/80;
+}

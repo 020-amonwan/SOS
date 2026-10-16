@@ -1,0 +1,16 @@
+{
+  "name": "SOS Flood Rescue",
+  "short_name": "SOS Flood",
+  "description": "ระบบแจ้งขอความช่วยเหลือฉุกเฉินผู้ติดค้างในบ้านที่น้ำท่วม",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#DC2626",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
