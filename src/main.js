@@ -4,6 +4,7 @@ import { saveDraft, loadDraft, saveSubmittedIncident, generateCaseID } from './s
 import { initMap, updateMapLocation } from './map.js';
 import { initAdminUI } from './admin.js';
 import { initChatbot } from './chatbot.js';
+import { getSession } from './auth.js';
 
 let state = {
   lat: null,
@@ -269,5 +270,13 @@ function restoreDraftIfAny() {
       if (latInput) latInput.value = state.lat;
       if (lngInput) lngInput.value = state.lng;
     }
+  }
+
+  // Pre-fill user name from login session if empty
+  const session = getSession();
+  if (session && session.name && !state.reporterName) {
+    state.reporterName = session.name;
+    const nameEl = document.getElementById('reporter-name');
+    if (nameEl) nameEl.value = session.name;
   }
 }
